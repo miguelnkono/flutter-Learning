@@ -1,3 +1,4 @@
+import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavBar extends StatefulWidget {
@@ -22,35 +23,27 @@ class _BottomNavBarState extends State<BottomNavBar> {
         showSelectedLabels: false,
         unselectedItemColor: const Color(0xFF526400),   // set the unselected item's color
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"), // BottomNavigationBarItem: home
-          BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"), // BottomNavigationBarItem: search
-          BottomNavigationBarItem(icon: Icon(Icons.airplane_ticket), label: "Tickets"), // BottomNavigationBarItem: airplane_tocket
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile")  // BottomNavigationBarItem: person
-        ]
-        /*
-        items: const [
           BottomNavigationBarItem(
-            icons: Icon(FluentSystemIcons.ic_fluent_home_regular),
-            activeIcon: FluentSystemIcons.ic_fluent_home_filled,
-            label: "Home"
+                  icon: Icon(FluentSystemIcons.ic_fluent_home_regular),
+                  activeIcon:Icon(FluentSystemIcons.ic_fluent_home_filled),
+                  label: "Home"
           ), // BottomNavigationBarItem: home
           BottomNavigationBarItem(
-            icons: Icon(FluentSystemIcons.ic_fluent_search_regular),
-            activeIcon: FluentSystemIcons.ic_fluent_search_filled,
+            icon: Icon(FluentSystemIcons.ic_fluent_search_regular),
+            activeIcon: Icon(FluentSystemIcons.ic_fluent_search_filled), 
             label: "Search"
           ), // BottomNavigationBarItem: search
           BottomNavigationBarItem(
-            icons: Icon(FluentSystemIcons.ic_fluent_ticket_regular),
-            activeIcon: FluentSystemIcons.ic_fluent_ticket_filled, 
+            icon: Icon(FluentSystemIcons.ic_fluent_airplane_regular),
+            activeIcon: Icon(FluentSystemIcons.ic_fluent_airplane_filled), 
             label: "Tickets"
           ), // BottomNavigationBarItem: airplane_tocket
           BottomNavigationBarItem(
-            icons: Icon(FluentSystemIcons.ic_fluent_person_regular),
-            activeIcon: FluentSystemIcons.ic_fluent_person_filled, 
+            icon: Icon(FluentSystemIcons.ic_fluent_person_regular),
+            activeIcon: Icon(FluentSystemIcons.ic_fluent_person_filled), 
             label: "Profile"
           )  // BottomNavigationBarItem: person
-        ]
-        */
+        ],
       ) // BottomNavigationBar
     ); // Scaffold
   }
