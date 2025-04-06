@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter_learn/reimplementatoinOfTheSampleApp/pages/CounterPage.dart';
+
 void main(List<String> args) {
   runApp(const MyApp());
 }
@@ -11,11 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Center(
-          child: Text("Welcom to my flutter learning course!"),
-        ),
-      )
+      home: CounterPage(),
     );
   }
 }

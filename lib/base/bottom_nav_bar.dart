@@ -11,7 +11,7 @@ class BottomNavBar extends StatefulWidget {
 class _BottomNavBarState extends State<BottomNavBar> {
   final appScreens = [
     Center(child: const Text("Home")),
-    Center(child: const Text("Searh")),
+    Center(child: const Text("Search")),
     Center(child: const Text("Tickets")),
     Center(child: const Text("Profile"))
   ];
@@ -20,7 +20,13 @@ class _BottomNavBarState extends State<BottomNavBar> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("My tickets"),
+          title: Center(
+            child: Text(
+                "My tickets",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+          ),
+          backgroundColor: Colors.blueGrey[200],
         ), // AppBar
         
         body: Center(
@@ -30,26 +36,29 @@ class _BottomNavBarState extends State<BottomNavBar> {
         bottomNavigationBar: BottomNavigationBar(
           selectedItemColor: Colors.blueGrey, // set the selected item's color
           showSelectedLabels: false,
-          unselectedItemColor:
-              const Color(0xFF526400), // set the unselected item's color
+          unselectedItemColor: const Color(0xFF526400), // set the unselected item's color
           items: const [
             BottomNavigationBarItem(
                 icon: Icon(FluentSystemIcons.ic_fluent_home_regular),
                 activeIcon: Icon(FluentSystemIcons.ic_fluent_home_filled),
                 // icon: Icon(Icons.home),
-                label: "Home"), // BottomNavigationBarItem: home
+                label: "Home"
+            ), // BottomNavigationBarItem: home
             BottomNavigationBarItem(
                 icon: Icon(FluentSystemIcons.ic_fluent_search_regular),
                 activeIcon: Icon(FluentSystemIcons.ic_fluent_search_filled),
-                label: "Search"), // BottomNavigationBarItem: search
+                label: "Search"
+            ), // BottomNavigationBarItem: search
             BottomNavigationBarItem(
                 icon: Icon(FluentSystemIcons.ic_fluent_airplane_regular),
                 activeIcon: Icon(FluentSystemIcons.ic_fluent_airplane_filled),
-                label: "Tickets"), // BottomNavigationBarItem: airplane_tocket
+                label: "Tickets"
+            ), // BottomNavigationBarItem: airplane_tocket
             BottomNavigationBarItem(
                 icon: Icon(FluentSystemIcons.ic_fluent_person_regular),
                 activeIcon: Icon(FluentSystemIcons.ic_fluent_person_filled),
-                label: "Profile") // BottomNavigationBarItem: person
+                label: "Profile"
+            ) // BottomNavigationBarItem: person
           ],
         ) // BottomNavigationBar
         ); // Scaffold

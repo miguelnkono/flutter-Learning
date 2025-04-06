@@ -1,0 +1,18 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+class settingsPage extends StatelessWidget {
+  const settingsPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.deepPurple[200],
+        title: Text(
+          "settings Page",
+        ),
+      ),
+    );
+  }
+}

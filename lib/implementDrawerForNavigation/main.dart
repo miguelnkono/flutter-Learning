@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'firstPage.dart';
+import 'homePage.dart';
+import 'settingsPage.dart';
+
+
 void main(List<String> args) {
   runApp(const MyApp());
 }
@@ -11,11 +16,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Center(
-          child: Text("Welcom to my flutter learning course!"),
-        ),
-      )
+      home: firstPage(),
+      routes: {
+        '/firstPage': (context) => firstPage(),
+        '/homePage': (context) => homePage(),
+        '/settingsPage': (context) => settingsPage(),
+      },
     );
   }
 }
