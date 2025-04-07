@@ -12,8 +12,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.blue[200],
+          title: Center(
+              child: Text("Learning flutter"),
+          ),
+        ),
         body: Center(
-          child: Text("Welcom to my flutter learning course!"),
+          child: Text("Welcome to my flutter learning course!"),
         ),
       )
     );
